@@ -14,7 +14,8 @@ class TicketController extends Controller
      */
     public function index()
     {
-        return view('tickets.index');
+        $tickets = Ticket::Latest()->get();
+        return view('tickets.index', compact('tickets'));
     }
 
     /**
@@ -25,6 +26,7 @@ class TicketController extends Controller
     public function create()
     {
         //
+        return view('tickets.create');
     }
 
     /**
