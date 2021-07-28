@@ -22,14 +22,14 @@
                     <div class="form-group mb-3">
                         <label for="summary" class="form-label"> Summary </label>
                         <div class="input-group">
-                            <input type="text" id="summary" name="summary" class="form-control"/>
+                            <input type="text" id="summary" name="summary" class="form-control" value=" {{ $ticket->summary }} "/>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
                         <label for= "description" class="form-label"> Description </label>
                         <div class="input-group">
-                            <input type="text" id="description" name="description" class="form-control"/>
+                            <input type="text" id="description" name="description" class="form-control" value=" {{ $ticket->description }} "/>
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@
 
 
                     <button class="btn btn-primary" type="submit"> Add </button>
-                    <button class="btn btn-dark" type="button" href="{{ '/tickets/index/' }}"> Back </button>
+
 
 
                 </form>

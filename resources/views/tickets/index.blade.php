@@ -35,11 +35,15 @@
                 @foreach($tickets as $ticket)
               <tr>
                 <td>{{ $ticket->id }} </td>
-                <td>{{ $ticket->summary }}></td>
+                <td>{{ $ticket->summary }}</td>
                 <td>{{ $ticket->description }}</td>
                 <td>{{ $ticket->status }}</td>
-                <td><a href="" class="btn btn-primary">
+                    <td><a href="tickets/{{ $ticket->id }}" class="btn btn-primary">
                         Update
+                    </a>
+                </td>
+                <td><a href="" class="btn btn-danger">
+                        Delete
                     </a>
                 </td>
 
